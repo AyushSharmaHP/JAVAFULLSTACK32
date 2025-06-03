@@ -46,7 +46,7 @@ btn3.addEventListener('click', handler);
 btn3.removeEventListener('click', handler); // Remove the event listener
 
 // Simulating asynchronous data fetching with callbacks
-
+/*
 function getData(dataid, getnextdata) {
     setTimeout(() => {
         console.log('Data',dataid);
@@ -67,11 +67,11 @@ getData(1,()=>{
     });
 }
 );
-
+*/
 /*________________________________________________________________________________________________ */
 
 // let promise = new Promise((resolve, reject) => {}
-
+/*
     function getData(dataid, getnextdata) {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
@@ -83,4 +83,12 @@ getData(1,()=>{
             }, 5000);
         });
     }
-    
+    */
+
+/*________________________________________________________________________________________________ */
+
+    let pro = new Promise((resolve,reject)=>{
+        console.log("I am a Promise")
+        resolve("success")
+        reject("")
+    })
